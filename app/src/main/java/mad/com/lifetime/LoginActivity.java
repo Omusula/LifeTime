@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mLoginFormView;
     public static final String EXTRA_MESSAGE = "mad.com.lifetime.MESSAGE";
     public void getRegisterPage(View RegBtn){
-        Intent registerUserIntent = new Intent(this, RegisterFront.class);//this(current activity
+        Intent registerUserIntent = new Intent(this, RegisterPaged.class);//this(current activity
         // which is an instance of the Context,class of other activity)
         String message = "Send something useful to the user";
         registerUserIntent.putExtra(EXTRA_MESSAGE, message);//send key(EXTRA_MESSAGE),value(message)
